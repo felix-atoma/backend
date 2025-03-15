@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: farmconnect-backend
+    name: Nashma-backend
     runtime: node
     buildCommand: npm install
     startCommand: node index.js
