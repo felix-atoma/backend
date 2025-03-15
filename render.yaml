@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: farmconnect-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: PORT
+        value: 5000
+      - key: DB_NAME
+        value: mydatabase
+      - key: DB_USER
+        value: root
+      - key: DB_PASSWORD
+        value: Adjola12.,
+      - key: DB_HOST
+        value: localhost
+      - key: DB_DIALECT
+        value: mysql
+      - key: JWT_SECRET
+        value: f47655aa64f926651792aca4dd38a92cde64d223e3ab6a788bed8cfdde278fb9a9d7c4ff31d64d40613e89257c041e36ed2841d4ce77e8bbe578ee2b464c75fe
+    plan: free
+    region: oregon
+    autoDeploy: true
